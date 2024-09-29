@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/jugar.css' %}">
+        <title>Juego precisión</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="color-boxes">
+                <!-- Texto y recuadro de color aleatorio -->
+                <div class="color-box-wrapper">
+                    <p class="box-title">Color aleatorio</p>
+                    <div id="color-box-random" class="color-box"></div>
+                </div>
+    
+                <!-- Texto y recuadro para el color RGB personalizado -->
+                <div class="color-box-wrapper">
+                    <p class="box-title">Color RGB Personalizado</p>
+                    <div id="color-box-rgb" class="color-box">Selecciona el color</div>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button id="random-color-btn">Cambiar color aleatorio</button>
+                <button id="open-menu-btn">Abrir menú de colores</button>
+            </div>
+    
+            <!-- Menú de colores RGB -->
+            <div id="color-menu" class="color-menu hidden">
+                <label for="red">Rojo: </label>
+                <input type="range" id="red" name="red" min="0" max="255" value="0">
+                <label for="green">Verde: </label>
+                <input type="range" id="green" name="green" min="0" max="255" value="0">
+                <label for="blue">Azul: </label>
+                <input type="range" id="blue" name="blue" min="0" max="255" value="0">
+            </div>
+    
+            <!-- Botón para calcular la precisión -->
+            <div class="precision">
+                <button id="calculate-accuracy-btn">Calcular Precisión</button>
+                <p id="accuracy-result"></p>
+            </div>
+        </div>
+        <script src="{% static 'js/jugar.js' %}"></script>
+    </body>
+</html>
