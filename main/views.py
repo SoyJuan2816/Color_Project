@@ -5,3 +5,6 @@ def index(request):
 
 def jugar(request):
     return render(request, 'jugar.html')
+
+def test(request):
+    return render(request, 'test.html')
