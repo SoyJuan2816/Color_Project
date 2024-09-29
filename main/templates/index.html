@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <title>Adivina El Color</title>
+    </head>
+    <body>
+        <div class="container">
+            <a href="jugar" class="button" id="button1">
+                <span class="button-text" id="btn_text_1">Jugar</span>
+            </a>
+            <a href="#" class="button" id="button2">
+                <span class="button-text">Probar vista</span>
+            </a>
+        </div>
+        <script src="{% static 'js/index.js' %}"></script>
+    </body>
+</html>
