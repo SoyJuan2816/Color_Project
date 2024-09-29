@@ -1,3 +1,5 @@
 # Color_Project
 
-Para ingresar a la página del creado, ingresa a: http://3.145.45.89/acerca-de/
+Página principal: http://3.145.45.89/
+
+Para ingresar a acerca de, ingresa a: http://3.145.45.89/acerca-de/
