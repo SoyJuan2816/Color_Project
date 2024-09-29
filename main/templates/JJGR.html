@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/JJGR.css' %}">
+
+    <title>Terminal de José Juan</title>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+        </div>
+        <div class="terminal-content">
+            <div class="command">
+                <span class="prompt">SoyJuan2816@linux:~$</span>
+                <span id="command1"></span>
+            </div>
+            <div class="command output" id="output1">
+                <span>Bienvenido a mi portafolio web</span>
+            </div>
+            <div class="command new-prompt" id="newPrompt1">
+                <span class="prompt">SoyJuan2816@linux:~$</span>
+                <span id="command2"></span>
+            </div>
+            <div class="command output" id="output2">
+                <p class="main-info">
+Soy José Juan García Romero, estudiante de la materia Sistemas Interactivos, este es mi tarea de identificación de colores...
+                </p>
+            </div>
+            <div class="command new-prompt" id="newPrompt2">
+                <span class="prompt">user@linux:~$</span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="photo-window">
+        <div class="photo-header">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+        </div>
+        <img src="{% static 'img/yo.jpg' %}" alt="Mi foto">
+    </div>
+
+    <script src="{% static 'js/JJGR.js' %}"></script>
+
+</body>
+</html>

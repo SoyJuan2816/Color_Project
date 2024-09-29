@@ -8,3 +8,6 @@ def jugar(request):
 
 def test(request):
     return render(request, 'test.html')
+
+def JJGR(request):
+    return render(request, 'JJGR.html')

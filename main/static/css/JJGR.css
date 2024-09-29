@@ -1,0 +1,117 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+.terminal {
+    margin-left: 30% !important;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1d1f21;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2d2f31;
+}
+
+.terminal-header div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.terminal-header .red {
+    background-color: #ff5f56;
+}
+
+.terminal-header .yellow {
+    background-color: #ffbd2e;
+}
+
+.terminal-header .green {
+    background-color: #27c93f;
+}
+
+.terminal-content {
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
+
+.command {
+    display: flex;
+}
+
+.prompt {
+    color: #00FF00;
+    margin-right: 5px;
+}
+
+.output {
+    display: none;
+}
+
+.new-prompt {
+    display: none;
+}
+
+.photo-window {
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    width: 20%;
+    background-color: #1d1f21;
+    border: 2px solid #2d2f31;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.photo-window img {
+    width: 100%;
+    border-bottom: 2px solid #2d2f31;
+}
+
+.photo-header {
+    background-color: #2d2f31;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.photo-header div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.photo-header .red {
+    background-color: #ff5f56;
+}
+
+.photo-header .yellow {
+    background-color: #ffbd2e;
+}
+
+.photo-header .green {
+    background-color: #27c93f;
+}
+
+.main-info{
+    margin: 0% 5%;
+}
+
+.print-echo{
+    margin: 0% 0%;
+}
